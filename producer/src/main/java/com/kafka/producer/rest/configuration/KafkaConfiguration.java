@@ -17,6 +17,7 @@ import com.kafka.producer.entity.User;
 @Configuration
 public class KafkaConfiguration {
 
+	//-----------------------String-Object-----------------------
 	
 	@Bean
 	public ProducerFactory<String, User> producerFactory(){
@@ -36,9 +37,7 @@ public class KafkaConfiguration {
         return new KafkaTemplate<>(producerFactory());
     }
 	
-	
-	
-	
+	//-----------------------String-String-----------------------
 	
 	@Bean
 	public ProducerFactory<String, String> producerFactory1(){
