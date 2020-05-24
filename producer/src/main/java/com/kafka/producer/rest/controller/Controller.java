@@ -21,6 +21,8 @@ public class Controller {
 	
 	public static final String Topic1="Kafka_Object";
 	
+	public static final String Topic2="Kafka_String";
+	
 	
 	@GetMapping("trigger-object")
 	public String TriggerObject() {
@@ -34,7 +36,7 @@ public class Controller {
 	@GetMapping("trigger-String")
 	public String TriggerString() {
 		
-		kafkaTemplate1.send(Topic1, "Trigerring Stirng");
+		kafkaTemplate1.send(Topic2, "Trigerring Stirng");
 		
 		return "Kafka String Message Produced";
 	}
