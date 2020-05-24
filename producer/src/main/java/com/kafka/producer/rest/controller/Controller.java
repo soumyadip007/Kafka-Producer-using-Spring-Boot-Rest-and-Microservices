@@ -23,7 +23,7 @@ public class Controller {
 	
 	
 	@GetMapping("trigger-object")
-	public String Trigger() {
+	public String TriggerObject() {
 		
 		kafkaTemplate.send(Topic1, new User("Soumya", "Java", 190000));
 		
@@ -31,8 +31,8 @@ public class Controller {
 	}
 	
 	
-	@GetMapping("trigger")
-	public String Trigger() {
+	@GetMapping("trigger-String")
+	public String TriggerString() {
 		
 		kafkaTemplate.send(Topic1, new User("Soumya", "Java", 190000));
 		
