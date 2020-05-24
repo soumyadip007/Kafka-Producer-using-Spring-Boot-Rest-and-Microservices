@@ -9,12 +9,17 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class User {
 
 	private String name;
     private String dept;
     private int salary;
+
+    public User(String name, String dept, int salary) {
+        this.name = name;
+        this.dept = dept;
+        this.salary = salary;
+    }
 
 }
