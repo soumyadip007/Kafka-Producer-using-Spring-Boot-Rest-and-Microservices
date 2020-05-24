@@ -21,7 +21,7 @@ public class Controller {
 	@GetMapping("trigger")
 	public String Trigger() {
 		
-		kafkaTemplate.sendOffsetsToTransaction(Topic,"Hello");
+		kafkaTemplate.send(Topic, new User("Soumya", "Java", 190000));
 		
 		return "Kafka Message Produced";
 	}
