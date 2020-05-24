@@ -27,7 +27,7 @@ public class Controller {
 		
 		kafkaTemplate.send(Topic1, new User("Soumya", "Java", 190000));
 		
-		return "Kafka Message Produced";
+		return "Kafka Object Message Produced";
 	}
 	
 	
@@ -36,6 +36,6 @@ public class Controller {
 		
 		kafkaTemplate1.send(Topic1, "Trigerring Stirng");
 		
-		return "Kafka Message Produced";
+		return "Kafka String Message Produced";
 	}
 }
