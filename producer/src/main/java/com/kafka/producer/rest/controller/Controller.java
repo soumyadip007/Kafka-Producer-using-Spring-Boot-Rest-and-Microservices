@@ -19,14 +19,23 @@ public class Controller {
 	@Autowired
 	private KafkaTemplate<String, String> kafkaTemplate1;
 	
-	public static final String Topic="Kafka_Spring";
+	public static final String Topic1="Kafka_Object";
 	
-	@GetMapping("trigger")
+	
+	@GetMapping("trigger-object")
 	public String Trigger() {
 		
-		kafkaTemplate.send(Topic, new User("Soumya", "Java", 190000));
+		kafkaTemplate.send(Topic1, new User("Soumya", "Java", 190000));
 		
 		return "Kafka Message Produced";
 	}
 	
+	
+	@GetMapping("trigger")
+	public String Trigger() {
+		
+		kafkaTemplate.send(Topic1, new User("Soumya", "Java", 190000));
+		
+		return "Kafka Message Produced";
+	}
 }
