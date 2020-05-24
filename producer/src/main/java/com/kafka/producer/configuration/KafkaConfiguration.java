@@ -17,6 +17,7 @@ import com.kafka.producer.entity.User;
 @Configuration
 public class KafkaConfiguration {
 
+	
 	//-----------------------String-Object-----------------------
 	
 	@Bean
