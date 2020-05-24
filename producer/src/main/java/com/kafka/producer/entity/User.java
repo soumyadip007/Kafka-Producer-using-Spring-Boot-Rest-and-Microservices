@@ -5,9 +5,9 @@ public class User {
 
 	private String name;
     private String dept;
-    private Long salary;
+    private int salary;
     
-    public User(String name, String dept, Long salary) {
+    public User(String name, String dept, int salary) {
         this.name = name;
         this.dept = dept;
         this.salary = salary;
@@ -29,11 +29,11 @@ public class User {
         this.dept = dept;
     }
 
-    public Long getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(Long salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 }
