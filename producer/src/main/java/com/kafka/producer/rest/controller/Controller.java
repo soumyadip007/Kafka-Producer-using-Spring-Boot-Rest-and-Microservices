@@ -15,6 +15,9 @@ public class Controller {
 
 	@Autowired
 	private KafkaTemplate<String, User> kafkaTemplate;
+
+	@Autowired
+	private KafkaTemplate<String, String> kafkaTemplate1;
 	
 	public static final String Topic="Kafka_Spring";
 	
