@@ -8,8 +8,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-@ComponentScan({"com.kafka.*"})
-@EntityScan("com.kafka.*")
+@ComponentScan({"com.kafka.producer.*"})
+@EntityScan("com.kafka.producer.*")
 public class ProducerApplication {
 
 	public static void main(String[] args) {
