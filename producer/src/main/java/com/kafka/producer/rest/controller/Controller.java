@@ -10,7 +10,7 @@ import com.kafka.producer.entity.User;
 
 
 @RestController
-@RequestMapping("/kafka")
+@RequestMapping("/kafka-producer")
 public class Controller {
 
 	@Autowired
@@ -33,7 +33,7 @@ public class Controller {
 	}
 	
 	
-	@GetMapping("/test")
+	@GetMapping("/trigger-string")
 	public String TriggerString() {
 		
 		kafkaTemplate1.send(Topic2, "Trigerring Stirng");
