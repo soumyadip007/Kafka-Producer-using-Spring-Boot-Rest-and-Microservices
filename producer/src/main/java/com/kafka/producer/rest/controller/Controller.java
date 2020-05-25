@@ -33,7 +33,7 @@ public class Controller {
 	}
 	
 	
-	@GetMapping("/trigger-String")
+	@GetMapping("/trigger-string")
 	public String TriggerString() {
 		
 		kafkaTemplate1.send(Topic2, "Trigerring Stirng");
