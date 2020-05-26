@@ -36,7 +36,7 @@ public class Controller {
 	@GetMapping("/test")
 	public String TriggerString() {
 		
-		kafkaTemplate1.send(Topic2, "Trigerring Stirng");
+		kafkaTemplate1.send(Topic2, "Hey! This is kafka");
 		
 		return "Kafka String Message Produced";
 	}
