@@ -10,7 +10,7 @@ import com.kafka.producer.entity.User;
 
 
 @RestController
-@RequestMapping("/kafka")
+@RequestMapping("/kafka-producer")
 public class Controller {
 
 	@Autowired
